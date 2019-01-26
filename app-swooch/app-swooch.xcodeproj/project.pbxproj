@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		462142EF21FB1176005C254C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462142EE21FB1176005C254C /* AppDelegate.swift */; };
-		462142F121FB1176005C254C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462142F021FB1176005C254C /* ViewController.swift */; };
 		462142F421FB1176005C254C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462142F221FB1176005C254C /* Main.storyboard */; };
 		462142F621FB1178005C254C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462142F521FB1178005C254C /* Assets.xcassets */; };
 		462142F921FB1178005C254C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462142F721FB1178005C254C /* LaunchScreen.storyboard */; };
 		4621430421FB1179005C254C /* app_swoochTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621430321FB1179005C254C /* app_swoochTests.swift */; };
 		4621430F21FB1179005C254C /* app_swoochUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621430E21FB1179005C254C /* app_swoochUITests.swift */; };
 		4621431F21FB170D005C254C /* Borderbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621431E21FB170D005C254C /* Borderbutton.swift */; };
+		4621432121FC19B1005C254C /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621432021FC19B1005C254C /* WelcomeVC.swift */; };
+		4621432321FC1A0E005C254C /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621432221FC1A0E005C254C /* SkillVC.swift */; };
+		4621432521FC1A97005C254C /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621432421FC1A97005C254C /* LeagueVC.swift */; };
+		4621432921FC3140005C254C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621432821FC3140005C254C /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		462142EB21FB1176005C254C /* app-swooch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swooch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		462142EE21FB1176005C254C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		462142F021FB1176005C254C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		462142F321FB1176005C254C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		462142F521FB1178005C254C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		462142F821FB1178005C254C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		4621430E21FB1179005C254C /* app_swoochUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_swoochUITests.swift; sourceTree = "<group>"; };
 		4621431021FB1179005C254C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4621431E21FB170D005C254C /* Borderbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borderbutton.swift; sourceTree = "<group>"; };
+		4621432021FC19B1005C254C /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		4621432221FC1A0E005C254C /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		4621432421FC1A97005C254C /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		4621432821FC3140005C254C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,9 @@
 		462142ED21FB1176005C254C /* app-swooch */ = {
 			isa = PBXGroup;
 			children = (
+				4621432721FC1AC1005C254C /* Models */,
+				4621432621FC1AA7005C254C /* controllers */,
 				462142EE21FB1176005C254C /* AppDelegate.swift */,
-				462142F021FB1176005C254C /* ViewController.swift */,
-				4621431E21FB170D005C254C /* Borderbutton.swift */,
 				462142F221FB1176005C254C /* Main.storyboard */,
 				462142F521FB1178005C254C /* Assets.xcassets */,
 				462142F721FB1178005C254C /* LaunchScreen.storyboard */,
@@ -126,6 +132,25 @@
 				4621431021FB1179005C254C /* Info.plist */,
 			);
 			path = "app-swoochUITests";
+			sourceTree = "<group>";
+		};
+		4621432621FC1AA7005C254C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4621432021FC19B1005C254C /* WelcomeVC.swift */,
+				4621432421FC1A97005C254C /* LeagueVC.swift */,
+				4621432221FC1A0E005C254C /* SkillVC.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		4621432721FC1AC1005C254C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4621431E21FB170D005C254C /* Borderbutton.swift */,
+				4621432821FC3140005C254C /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462142F121FB1176005C254C /* ViewController.swift in Sources */,
+				4621432521FC1A97005C254C /* LeagueVC.swift in Sources */,
+				4621432321FC1A0E005C254C /* SkillVC.swift in Sources */,
+				4621432121FC19B1005C254C /* WelcomeVC.swift in Sources */,
 				4621431F21FB170D005C254C /* Borderbutton.swift in Sources */,
+				4621432921FC3140005C254C /* Player.swift in Sources */,
 				462142EF21FB1176005C254C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
